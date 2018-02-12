@@ -8,10 +8,10 @@ const server = express();
 server.use(cors());
 
 server.get('/', (req, res) => {
-  res.send(`Hello world from ${port}`);
+  res.send(`Hello world from ${port}. You guys are crazy. I am enjoying working with you.`);
 });
 
-server.post('/paylaod', (req, res) => {
+server.post('/payload', (req, res) => {
   res.json(req.body);
 });
 
